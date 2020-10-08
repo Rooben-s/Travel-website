@@ -34,7 +34,6 @@ p {
 h2 {
     font-size: 4rem;
     color: black;
-
 }
 
 h3 {
@@ -67,7 +66,6 @@ button {
 
 button:hover {
     background: #0f151d;
-
 }
 
 
@@ -77,6 +75,9 @@ button:hover {
 .main-head {
     background: #131c27;
     color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
 }
 
 
@@ -89,6 +90,7 @@ nav {
     min-height: 10vh;
     align-items: center;
     flex-wrap: wrap;
+
 }
 
 
@@ -99,7 +101,6 @@ nav ul {
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
-
 }
 
 
@@ -122,8 +123,6 @@ nav ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-
-
 }
 
 .hero h3 {
@@ -132,7 +131,6 @@ nav ul {
     margin-top: 3rem;
     margin-bottom: 10rem;
     color: black;
-    
 }
 
 
@@ -146,6 +144,7 @@ nav ul {
     display: flex;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -159,7 +158,6 @@ nav ul {
 .locations-head h2 {
     padding: 1rem 0rem;
     text-decoration: underline;
-
 }
 
 .locations-head h3 {
@@ -167,25 +165,139 @@ nav ul {
 }
 
 
-.cloud {
-    position: absolute;
-    top: 0%;
-    right: 0%;
+/* Benefits section */
+
+.benefits-head {
+    background: #343c44;
+    padding: 3rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.moving-cloud-1 {
-
+.benefits-head h2,
+.benefits-head h3 {
+    color: white;
+    padding: 1rem;
 }
 
 
-.moving-cloud-2 {
-    top: 20%;
-    z-index: -1;
-    opacity: 0.5;
-
+.cards {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+    /* for responsive card */
 }
 
 
+.card {
+    text-align: center;
+    flex: 1 1 25rem;
+
+    /* height of card */
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.cards img {
+    max-width: 15%;
+    margin: 2rem;
+}
+
+card h4,
+.card p {
+    padding: 1rem;
+}
+
+.card-icon {
+    background: #4c6e97;
+ }
+
+ #contact {
+     min-height: 90vh;
+     background: linear-gradient(rgba(153, 185, 249, 0.8), transparent),url("/img/finland.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+
+ .form-wrapper {
+     background-color: rgba(19, 28, 39, 0.8);
+     width: 40%;
+     color: white;
+     border-radius: 20px;
+ }
+
+ .form-head {
+     text-align: center;
+     padding: 4rem;
+ }
+ .name-form,
+ .email-form {
+     padding: 3rem;
+     text-align: center;
+ }
+
+ .form-wrapper label {
+     margin: 0rem 3rem;
+
+ }
+
+ .form-wrapper button {
+     width: 100%;
+     padding: 2rem;
+     margin-top: 8rem;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+ }
+
+
+ .form-wrapper input {
+     padding: 1rem 3 rem;
+ }
+
+ footer {
+     color: white;
+     background: rgba(19, 28, 39, 1);
+ }
+
+
+ .footer-wrapper {
+     display: flex;
+     padding: 2 rem;
+     width: 90%;
+     margin: auto;
+     align-items: center;
+     min-height: 10vh;
+     flex-wrap: wrap;
+
+ }
+
+
+ footer h5 {
+     flex: 1 1 40rem;
+ }
+
+
+ footer ul {
+     display: flex;
+     list-style: none;
+     flex: 1 1 40rem;
+     justify-content: space-evenly;
+     align-items: center;
+ }
 
 
 
@@ -210,5 +322,29 @@ nav ul {
     #logo {
         padding: 2rem;
     }
+
+    .locations-head h3 {
+        background: rgba(19, 28, 39, 0.9);
+    }
+
+    .form-wrapper {
+        width: 100%;
+    }
+
+
+
+
+
+
+    footer {
+        text-align: center;
+    }
+
+
+    footer h5 {
+        padding-bottom: 3rem;
+    }
+
+
 
 }
